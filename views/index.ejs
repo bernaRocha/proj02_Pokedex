@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/card.css">
 
 </head>
+
 <body>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/cadastro">Cadastro</a>
-    </nav>
-    <div class="conteudo">
+  <nav>
+    <a href="/">Home</a>
+    <a href="/cadastro">Cadastro</a>
+  </nav>
 
-      <h1 class="titulo">Pokedéx</h1>
+  <h2 class="titulo">Pokedéx</h2>
+  
+  <div class="conteudo">
 
-    </div>
+    <% pokemons.map( i => {
+      %><div class="card-unico">
+        <p class="card-item">
+          <%= i.nome %>
+        </p>
+        <% %> <img class="card-item" src=<%=i.imagem %> %>
+          <% %>
+            <p class="card-item">Tipo: <%= i.tipo %>
+            </p>
+        </div>
+    <% }) %>     
+
+  </div>
 
 </body>
+
 </html>
