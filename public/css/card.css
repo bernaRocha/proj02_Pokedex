@@ -1,0 +1,16 @@
+.card {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-weight: 100;
+}
+
+img {
+  width: 200px;
+}
+
+.tipo {
+  margin-left: 10px;
+}

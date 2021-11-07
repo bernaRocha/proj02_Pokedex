@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/detalhe.css">
   <title>Document</title>
 </head>
 <body>
@@ -12,6 +13,20 @@
     <a href="/">Home</a>
     <a href="/cadastro">Cadastro</a>
   </nav>
+
+  <div class="card">
+    
+    <h2><%= pokemon.nome %></h2>
+    <img src="<%= pokemon.imagem %>">
+    <h4><%= pokemon.numero%></h4>
+    <h4><%= pokemon.tipo%></h4>
+    <h4><%= pokemon.descricao%></h4>
+    <h4><%= pokemon.altura%></h4>
+    <h4><%= pokemon.peso%></h4>
+    <h4><%= pokemon.categoria%></h4>
+    <h4><%= pokemon.habilidade%></h4>
+   
+</div>
 
 </body>
 </html>

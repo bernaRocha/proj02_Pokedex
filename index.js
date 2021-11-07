@@ -75,8 +75,11 @@ app.get("/cadastro", (req, res) => {
 });
 
 
-app.get('/detalhes/:id', (req, res) => { // renderiza a rotadetalhes
-  res.render('detalhes')
+app.get('/detalhes/:id', (req, res) => { // renderiza a rota detalhes
+ 
+  res.render('detalhes', {
+
+  })
 })
 
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));

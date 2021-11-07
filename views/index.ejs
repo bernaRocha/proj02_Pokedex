@@ -19,19 +19,19 @@
 
   <h2 class="titulo">Pokedéx</h2>
   
-  <div class="conteudo">
+  <div class="card">
 
-    <% pokemons.map( i => {
-      %><div class="card-unico">
-        <p class="card-item">
-          <%= i.nome %>
-        </p>
-        <% %> <img class="card-item" src=<%=i.imagem %> %>
-          <% %>
-            <p class="card-item">Tipo: <%= i.tipo %>
-            </p>
-        </div>
-    <% }) %>     
+    <% pokemons.forEach((item, index)=> { %>
+      <a class="" href="/detalhes <%= index %>">
+        <img src="<%= item.imagem %>">
+      </a>
+        <h3 class="nome">
+          <%= item.nome %>
+        </h3>
+        <h4 class="tipo">
+          <%= item.tipo %>
+        </h4>
+      <% }) %>
 
   </div>
 
